@@ -40,10 +40,7 @@
     background-color: white;
     border-top: 2px solid rgb(130,130,63);
   }
-  /* .WatsappNumber{
-    display: block;
-    border: 2px solid #666;
-  } */
+ 
 }
 
 .carousel-control-prev-icon{
@@ -54,4 +51,11 @@
     background-color: black;
 }
 
+.tab-radius{
+    border-radius: none!important;
+}
 
+ /* .flight-booking{
+  position:absolute;
+  margin-top: -5px;
+  } */
