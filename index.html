@@ -143,10 +143,119 @@
             type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
         </div>
       </nav>
-      <div class="tab-content" id="nav-tabContent">
+      <div class="tab-content p-3" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-flights" role="tabpanel" aria-labelledby="nav-flights-tab"
           tabindex="0">
-          Flights</div>
+          <div class="row pb-3">
+            <div class="col-lg-6">
+              <input checked="checked" id="radioRT" name="TripType" type="radio" value="Return">
+              <label for="radioRT">Return</label>
+              <input checked="checked" id="oneway" name="TripType" type="radio" value="oneway">
+              <label for="oneway">One Way</label>
+              <input checked="checked" id="multicity" name="TripType" type="radio" value="multicity">
+              <label for="multicity">MultiCity</label>
+            </div>
+            <div class="col-lg-4">
+              <form action="">
+                <input id="directflight" name="directflight" type="checkbox" value="directflight">
+                <label for="directflight">Direct Flight</label>
+                <input id="flexi" name="flexi" type="checkbox" value="flexi">
+                <label for="flexi">Flexi</label>
+
+              </form>
+            </div>
+          </div>
+
+          <form class="row gy-2 gx-3 align-items-center">
+            <div class="col-lg-3 col-6">
+              <label for="autoSizingInputGroup">Leaving from</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <label for="autoSizingInputGroup">Arrive To</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <label for="autoSizingInputGroup">Departure date</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="date" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <label for="autoSizingInputGroup">Return Date</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="date" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+              </div>
+            </div>
+            <div class="col-lg-1 col-6">
+              <label for="adult" class="labelfontsize">Adult (>15)</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+             <div class="col-lg-1 col-6">
+              <label for="adult" class="labelfontsize">Youth (12-15)</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected value="Youth">Youth</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+             <div class="col-lg-1 col-6">
+              <label for="adult" class="labelfontsize">Children (2-11)</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected value="Children">Children</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+             <div class="col-lg-1 col-6">
+              <label for="adult" class="labelfontsize"> Infant (2) </label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected value="Infant">Infant</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="col-lg-3 col-6">
+              <label for="adult">Travel Class</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected value="EconomyClass">Economy Class</option>
+                <option value="Premiumclass">Premium Class</option>
+                <option value="Businessclass">Business Class</option>
+                <option value="Firstclass">First Class</option>
+                <option value="Nopreference">No Preference</option>
+              </select>
+            </div>
+            <div class="col-lg-3 col-6">
+              <label for="adult" >Airline Preference</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected value="AllAirlines">All Airlines</option>
+                <option value="Batikair">Batik Air</option>
+                <option value="AirAsia">Air Asia</option>
+                <option value="PIA">PIA</option>
+              </select>
+            </div>
+            <div class="col-lg-2 col-12 mt-4">
+              <button type="submit" class="btn btn-primary ">Submit</button>
+            </div>
+          </form>
+        </div>
+
         <div class="tab-pane fade" id="nav-hotels" role="tabpanel" aria-labelledby="nav-hotels-tab" tabindex="0">Hotels
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...
